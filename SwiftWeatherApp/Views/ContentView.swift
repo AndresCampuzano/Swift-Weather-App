@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
@@ -37,8 +38,10 @@ struct ContentView: View {
                 }
             }
         }
-        .background(Color(hue: 0.664, saturation: 0.811, brightness: 0.46))
-        .preferredColorScheme(.dark)
+        .background(colorScheme == .light
+                    ? Color(hue: 0.664, saturation: 0.811, brightness: 0.46) 
+                    : Color(hue: 0.664, saturation: 0.811, brightness: 0.26)
+        )
     }
 }
 

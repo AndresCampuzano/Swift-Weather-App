@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct WeatherView: View {
+    @Environment(\.colorScheme) var colorScheme
     var weather: ResponseBody
+    
     var body: some View {
         ZStack(alignment: .leading) {
             VStack {
@@ -22,6 +24,7 @@ struct WeatherView: View {
                     
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundStyle(.white)
                 
                 Spacer()
                 
@@ -110,19 +113,63 @@ struct WeatherView: View {
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding()
                     }
+                    .foregroundStyle(.white)
                     
                     Spacer()
                         .frame(height: 80)
+                    
+                    Image("city-weather-app")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 350)
+                    
+                    Spacer()
+                    
                     
                 }
                 .frame(maxWidth: .infinity)
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
+            
+            VStack {
+                Spacer()
+                
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("Weather now")
+                        .bold()
+                        .padding(.bottom)
+                    
+                    HStack {
+                        WeatherRow(logo: "thermometer.low", name: "Min temp", value: weather.main.tempMin.roundDouble() + "°")
+                        Spacer()
+                        WeatherRow(logo: "thermometer.medium", name: "Max temp", value: weather.main.tempMax.roundDouble() + "°")
+                    }
+                    
+                    HStack {
+                        WeatherRow(logo: "wind", name: "Wind speed", value: weather.wind.speed.roundDouble() + "m/s")
+                        Spacer()
+                        WeatherRow(logo: "humidity", name: "Humidity", value: weather.main.tempMax.roundDouble() + "%")
+                    }
+                }
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                .padding()
+                .padding(.bottom, 20)
+                .foregroundStyle(colorScheme == .light
+                                 ? Color(hue: 0.656, saturation: 0.787, brightness: 0.354)
+                                 : Color(hue: 0.655, saturation: 0.0, brightness: 0.894)
+                                )
+                .background(colorScheme == .light ? .white : .black)
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+            }
+           
+                        
         }
-        .ignoresSafeArea(.keyboard)
-        .background(Color(hue: 0.664, saturation: 0.811, brightness: 0.46))
-        .preferredColorScheme(.dark)
+        .ignoresSafeArea(edges: .bottom)
+        .background(colorScheme == .light
+                    ? Color(hue: 0.664, saturation: 0.811, brightness: 0.46)
+                    : Color(hue: 0.664, saturation: 0.811, brightness: 0.26)
+        )
     }
 }
 

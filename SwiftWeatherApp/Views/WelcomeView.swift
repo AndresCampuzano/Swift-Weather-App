@@ -10,6 +10,7 @@ import CoreLocationUI
 
 struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack {
@@ -18,9 +19,16 @@ struct WelcomeView: View {
                     .bold()
                     .font(.title)
                 
+                if colorScheme == .light {
+                    Text("Light mode")
+                } else {
+                    Text("Dark mode")
+                }
+                
                 Text("Please share your current location to get the weather in your area")
                     .padding()
             }
+            .foregroundStyle(.white)
             .multilineTextAlignment(.center)
             .padding()
             
