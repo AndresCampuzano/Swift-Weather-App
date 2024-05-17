@@ -10,7 +10,6 @@ import CoreLocationUI
 
 struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack {
@@ -18,12 +17,7 @@ struct WelcomeView: View {
                 Text("Welcome to the Swift Weather App")
                     .bold()
                     .font(.title)
-                
-                if colorScheme == .light {
-                    Text("Light mode")
-                } else {
-                    Text("Dark mode")
-                }
+
                 
                 Text("Please share your current location to get the weather in your area")
                     .padding()
@@ -33,7 +27,7 @@ struct WelcomeView: View {
             .padding()
             
             LocationButton(.shareCurrentLocation) {
-                locationManager.requesLocation()
+                locationManager.requestLocation()
             }
             .symbolVariant(.fill)
             .labelStyle(.titleAndIcon)
