@@ -13,9 +13,6 @@
 		F1573D092BF6721700D1E672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1573D082BF6721700D1E672 /* Preview Assets.xcassets */; };
 		F1573D112BF676BC00D1E672 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1573D102BF676BC00D1E672 /* LocationManager.swift */; };
 		F1573D142BF6796900D1E672 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1573D132BF6796900D1E672 /* WelcomeView.swift */; };
-		F180ECFD2BF7CC2600BE21BB /* view-1.png in Resources */ = {isa = PBXBuildFile; fileRef = F180ECFA2BF7CC2600BE21BB /* view-1.png */; };
-		F180ECFE2BF7CC2600BE21BB /* view-3.png in Resources */ = {isa = PBXBuildFile; fileRef = F180ECFB2BF7CC2600BE21BB /* view-3.png */; };
-		F180ECFF2BF7CC2600BE21BB /* view-2.png in Resources */ = {isa = PBXBuildFile; fileRef = F180ECFC2BF7CC2600BE21BB /* view-2.png */; };
 		F1AAF9792BF67F2A00983A80 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAF9782BF67F2A00983A80 /* LoadingView.swift */; };
 		F1AAF97B2BF683A800983A80 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAF97A2BF683A800983A80 /* WeatherManager.swift */; };
 		F1AAF97D2BF6A35A00983A80 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AAF97C2BF6A35A00983A80 /* WeatherView.swift */; };
@@ -34,9 +31,6 @@
 		F1573D102BF676BC00D1E672 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F1573D132BF6796900D1E672 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F180ECF82BF7AEDB00BE21BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F180ECFA2BF7CC2600BE21BB /* view-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "view-1.png"; path = "../../../../Desktop/view-1.png"; sourceTree = "<group>"; };
-		F180ECFB2BF7CC2600BE21BB /* view-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "view-3.png"; path = "../../../../Desktop/view-3.png"; sourceTree = "<group>"; };
-		F180ECFC2BF7CC2600BE21BB /* view-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "view-2.png"; path = "../../../../Desktop/view-2.png"; sourceTree = "<group>"; };
 		F1AAF9782BF67F2A00983A80 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F1AAF97A2BF683A800983A80 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		F1AAF97C2BF6A35A00983A80 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -76,7 +70,6 @@
 		F1573D002BF6721600D1E672 /* SwiftWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				F180ECF92BF7CBDF00BE21BB /* Github */,
 				F180ECF82BF7AEDB00BE21BB /* Info.plist */,
 				F1AAF9862BF6CBC000983A80 /* Components */,
 				F1573D012BF6721600D1E672 /* SwiftWeatherAppApp.swift */,
@@ -117,16 +110,6 @@
 				F1AAF97C2BF6A35A00983A80 /* WeatherView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		F180ECF92BF7CBDF00BE21BB /* Github */ = {
-			isa = PBXGroup;
-			children = (
-				F180ECFA2BF7CC2600BE21BB /* view-1.png */,
-				F180ECFC2BF7CC2600BE21BB /* view-2.png */,
-				F180ECFB2BF7CC2600BE21BB /* view-3.png */,
-			);
-			path = Github;
 			sourceTree = "<group>";
 		};
 		F1AAF9862BF6CBC000983A80 /* Components */ = {
@@ -197,9 +180,6 @@
 			files = (
 				F1AAF9812BF6A44B00983A80 /* WeatherData.json in Resources */,
 				F1573D092BF6721700D1E672 /* Preview Assets.xcassets in Resources */,
-				F180ECFD2BF7CC2600BE21BB /* view-1.png in Resources */,
-				F180ECFF2BF7CC2600BE21BB /* view-2.png in Resources */,
-				F180ECFE2BF7CC2600BE21BB /* view-3.png in Resources */,
 				F1573D062BF6721700D1E672 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
