@@ -30,6 +30,7 @@
 		F1573D082BF6721700D1E672 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1573D102BF676BC00D1E672 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F1573D132BF6796900D1E672 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F180ECF82BF7AEDB00BE21BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F1AAF9782BF67F2A00983A80 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F1AAF97A2BF683A800983A80 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		F1AAF97C2BF6A35A00983A80 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		F1573D002BF6721600D1E672 /* SwiftWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				F180ECF82BF7AEDB00BE21BB /* Info.plist */,
 				F1AAF9862BF6CBC000983A80 /* Components */,
 				F1573D012BF6721600D1E672 /* SwiftWeatherAppApp.swift */,
 				F1573D122BF678BF00D1E672 /* Views */,
@@ -335,6 +337,7 @@
 				DEVELOPMENT_TEAM = 63563A8HCB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftWeatherApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swift Weather App";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -353,6 +356,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WEATHER_API_KEY = 34ee46c2123bc5836764eecc4f4ef113;
 			};
 			name = Debug;
 		};
@@ -367,6 +371,7 @@
 				DEVELOPMENT_TEAM = 63563A8HCB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftWeatherApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Swift Weather App";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -385,6 +390,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WEATHER_API_KEY = 34ee46c2123bc5836764eecc4f4ef113;
 			};
 			name = Release;
 		};
